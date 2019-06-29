@@ -1,0 +1,60 @@
+<%
+                            if(typeof HD == 'object'){
+                            for(int i=0;i< HD.length; i++){
+                                <tr>
+                                        <td><a href="#"><%= HD[i].idHD %></a></td>
+                                        <td><%= HD[i].NgayDat %></td>
+                                        <td>Quần sort Nam hana</td>
+                                        <td>100.000 đ</td>
+                                        <td><%
+                                            var tthd= parseInt(HD[i].TrangThaiHD);
+                                            <!-- switch(tthd):
+                                                case 1:  -->
+                                            %></td>
+                                        <td><a href="/chitiet">Xem chi tiết</a></td>
+                                    </tr>
+                        %>
+                        <%
+                            } }
+                        %>
+
+
+
+
+                        <%
+                                                for(var j=0;j< TenSP.length;j++){
+                                                    %>
+                                                    <td>
+                                                    <h4><%= TenSP[j].TenSP %></h4>
+                                                </td>
+                                                    <%
+                                                }
+                                            %>
+
+
+
+                        <!-- switch(tthd): {
+                                        ttdh=ttdh.toString();
+                                        case 1: {kq="Đã xác nhận."; break;}
+                                        case 2: {kq= "Mới đặt."; break;}
+                                        case 3: {kq="Đang giao."; break;}
+                                        case 4: {kq= "Đã nhận."; break;}
+                                    } -->
+
+
+                                      var kq="";
+                            if(ttdh==1) kq="Đã xác nhận.";
+                            elseif(ttdh==2) kq= "Mới đặt.";
+                            elseif(ttdh==3) kq= "Đang giao.";
+                                    
+
+
+                                     function char_tthd(tthd)
+                                {
+                                    <!-- var kq="";
+                                    if(ttdh==2) kq="Đã xác nhận."; -->
+                                    
+                                    
+                                    return tthd;
+                                            
+                                }
